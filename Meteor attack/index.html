@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/icon.jpg" />
+        <link rel="stylesheet" href="cascata.css" />
+        <title>Meteor attack!</title>
+    </head>
+    <body onload="loaded()">
+        <div id="margin">
+            <header id="header">
+                <p id="top">
+                    <span id="gameName">Meteor attack!</span>
+                    <canvas id="line" style="position: absolute; width: 100px; height: 100px; left: 310px; top: 10px;"></canvas>
+                    <div id="objective">Nesse jogo, tente destruir os meteoritos, antes que cheguem à Terra. Quanto mais tempo você conseguir aguentar, maior será sua pontuação no final!</div>
+                    <nav id="controls">
+                        <label for="start">Iniciar:</label>&nbsp;&nbsp;<input class="initial" id="start" type="submit" value="Start" onclick="start()" /><br/><br/>
+                        <label for="finish">Interromper:</label>&nbsp;&nbsp;<input class="initial" id="finish" type="submit" value="Finish" onclick="finish('interromper')" /><br/><br/>
+                        <div id="higher">Higher pontuation: ???<span id="pontos"> | Pontuação: ???</span></div>
+                        <input type="image" id="pause" onclick="pause()" src="images/gaming.png" />
+                    </nav>
+                </p>
+            </header>
+            <section id="game">
+                <div id="death-line">
+                    <img src="images/terra.jpg" id="linha-image" />
+                </div>
+                </aside>
+                <div id="dialogo">.</div>
+                <img id="mira" src="images/mira.png" />
+                <img id="longer" src="images/longer.png" />
+            </section>
+        </div>
+    </body>
+    <script src="main.js"></script>
+</html>

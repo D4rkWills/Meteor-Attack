@@ -1,0 +1,134 @@
+@charset "UTF-8";
+#margin {
+    margin: -8px;
+}
+body { /*Body default*/
+    color: black;
+    font: normal 12pt Arial;
+    background: url("images/fundo.png");
+    background-size: 50%;
+}
+#header { /*Confg of the header*/
+    width: 98.5%;
+    height: 120px;
+    background: rgba(35, 83, 122, 0.801);
+    padding: 10px;
+    position: fixed;
+    z-index: 10;
+}
+#gameName { /*Game of the name in the initial screen*/
+    color: white;
+    font-size: 20pt;
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+#objective { /*Game objective*/
+    color: rgba(184, 219, 248, 0.801);
+    width: 450px;
+    font-size: 15pt;
+    position: absolute;
+    top: 10px;
+    left: 400px;
+    text-align: justify;
+    text-indent: 20px;
+    margin-top: 10px;
+}
+#controls { /*controles*/
+    position: absolute;
+    left: 900px;
+    font-size: 15pt;
+    color: white;
+    top: 10px;
+}
+.initial { /*Initial buttons*/
+    background: rgba(184, 219, 248, 0.329);
+    border: none;
+    color: white;
+    font-size: 12pt;
+    padding: 5px;
+}
+#game { /*Game screen*/
+    position: absolute;
+    margin-top: 160px;
+}
+#death-line { /*Altura maxima do bloco*/
+    position: relative;
+    top: 1000px;
+}
+#dialogo { /*aba de interação*/
+    position: fixed;
+    visibility: hidden;
+    width: 500px;
+    height: 300px;
+    background: no-repeat url("images/gameOver.jpg");
+    top: 30%;
+    left: 30%;
+    padding: 10px;
+    transition: all 0.5s;
+    z-index: 10;
+    text-shadow: 1px 1px 1px rgb(65, 67, 78);
+    border: solid 2px rgb(52, 52, 114);
+}
+.bloco { /*definições dos blocos*/
+    position: absolute;
+    top: 160px;
+    width: 80px;
+    height: 80px;
+}
+#accept { /*Botão de perda*/
+    color: black;
+}
+.power {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-left: 6px;
+    border: solid 2px black;
+    margin-bottom: 18px;
+    filter: brightness(50%);
+    transition: 0.3s;
+    border: solid 1px white;
+}
+#pause {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 250px;
+}
+#linha-image {
+    width: 1349px;
+    position: relative;
+    top: 4px;
+}
+#mira {
+    visibility: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.bloom {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100px;
+    height: 100px;
+}
+#Ray {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: yellow;
+    width: 50px;
+    height: 600px;
+    visibility: hidden;
+}
+#longer {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    visibility: hidden;
+}
